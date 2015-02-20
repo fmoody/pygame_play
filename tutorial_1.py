@@ -13,9 +13,9 @@ screenrect = screen.get_rect()
 
 black = 0, 0, 0
 
-ball = pygame.image.load("ball.gif").convert_alpha()
+ball = pygame.transform.scale(pygame.image.load("ball.gif").convert_alpha(),[10,10])
 ballrect = ball.get_rect()
-ballspeed = [1, 1]
+ballspeed = [2, 1]
 
 paused = True
 
