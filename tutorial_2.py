@@ -44,6 +44,9 @@ while 1:
                 # Delete a ball
                 if len(balls) > 0:
                     balls.pop()
+            elif event.key == pygame.K_e:
+                # Delete all balls
+                balls = []
             elif event.key == pygame.K_q or event.key == pygame.K_ESCAPE:
                 sys.exit()
                 
